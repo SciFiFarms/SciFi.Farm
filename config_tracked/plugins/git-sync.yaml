@@ -1,0 +1,30 @@
+enabled: true
+folders:
+  - pages
+  - plugins
+  - themes
+sync:
+  on_save: false
+  on_delete: false
+  on_media: false
+  cron_enable: false
+  cron_at: '0 12,23 * * *'
+local_repository: null
+repository: 'https://github.com/SciFiFarms/scififarms.com.git'
+no_user: '0'
+user: thehackmeister
+password: gitsync-def5020021b6c51895faf39b8601c58e9b55d4c73b68379b6559b3f22712d85fc8f7691ebf00ce1149e4cc67a812b66718acc8156eca823b49d552dd59d07f36421485000c1897bd68b12d7e529f9954c2621efd9d7bbef57e69cf1a1ccc01f057f2b298
+webhook: /_git-sync-4ee079156f33
+webhook_enabled: '0'
+webhook_secret: 1c5bdc74200b6808458ec63815eda492b8727bc5c65b3973
+branch: master
+remote:
+  name: origin
+  branch: master
+git:
+  author: gituser
+  message: '(Grav GitSync) Automatic Commit'
+  name: GitSync
+  email: git-sync@trilby.media
+  bin: git
+logging: false
