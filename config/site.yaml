@@ -1,13 +1,13 @@
-title: 'SciFi Farms Documentation'
+title: 'SciFi Farms'
 default_lang: en
 author:
-  name: TechnoCore
-  email: grav@spencerslab.com
+  name: 'John Appleseed'
+  email: john@example.com
 taxonomies:
   - category
   - tag
 metadata:
-  description: 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+  description: 'My Grav Site'
 summary:
   enabled: true
   format: short

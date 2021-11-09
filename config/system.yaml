@@ -1,12 +1,12 @@
 absolute_urls: false
-timezone: null
+timezone: ''
 default_locale: null
 param_sep: ':'
 wrapped_site: false
 reverse_proxy_setup: false
 force_ssl: false
 force_lowercase_urls: true
-custom_base_url: null
+custom_base_url: ''
 username_regex: '^[a-z0-9_-]{3,16}$'
 pwd_regex: '(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}'
 intl_enabled: true
@@ -16,19 +16,22 @@ http_x_forwarded:
   port: true
   ip: true
 languages:
-  supported: null
+  supported: {  }
   default_lang: null
   include_default_lang: true
-  pages_fallback_only: false
+  include_default_lang_file_extension: true
   translations: true
   translations_fallback: true
   session_store_active: false
   http_accept_language: false
   override_locale: false
+  content_fallback: {  }
+  pages_fallback_only: false
 home:
   alias: /home
   hide_in_urls: false
 pages:
+  type: regular
   theme: learn2-git-sync
   order:
     by: default
@@ -49,9 +52,9 @@ pages:
     page: true
     twig: true
   markdown:
-    extra: true
+    extra: false
     auto_line_breaks: false
-    auto_url_links: true
+    auto_url_links: false
     escape_markup: false
     special_chars:
       '>': gt
@@ -70,15 +73,15 @@ pages:
     - json
     - rss
     - atom
-  append_url_extension: null
+  append_url_extension: ''
   expires: 604800
   cache_control: null
   last_modified: false
-  etag: false
+  etag: true
   vary_accept_encoding: false
-  redirect_default_route: false
-  redirect_default_code: '302'
-  redirect_trailing_slash: true
+  redirect_default_code: 302
+  redirect_trailing_slash: 1
+  redirect_default_route: 0
   ignore_files:
     - .DS_Store
   ignore_folders:
@@ -101,29 +104,24 @@ cache:
   purge_at: '0 4 * * *'
   clear_at: '0 3 * * *'
   clear_job_type: standard
-  clear_images_by_default: true
+  clear_images_by_default: false
   cli_compatibility: false
   lifetime: 604800
   gzip: false
   allow_webserver_gzip: false
   redis:
-    socket: null
-    server: null
-    port: null
+    socket: false
     password: null
-  memcache:
-    server: null
-    port: null
-  memcached:
-    server: null
-    port: null
+    database: null
 twig:
   cache: true
   debug: true
   auto_reload: true
-  autoescape: false
+  autoescape: true
   undefined_functions: true
   undefined_filters: true
+  safe_functions: {  }
+  safe_filters: {  }
   umask_fix: false
 assets:
   css_pipeline: false
@@ -137,8 +135,9 @@ assets:
   js_pipeline_before_excludes: true
   js_minify: true
   enable_asset_timestamp: false
+  enable_asset_sri: false
   collections:
-    jquery: 'system://assets/jquery/jquery-2.x.min.js'
+    jquery: 'system://assets/jquery/jquery-3.x.min.js'
 errors:
   display: 0
   log: true
@@ -148,6 +147,8 @@ log:
     facility: local6
 debugger:
   enabled: false
+  provider: clockwork
+  censored: false
   shutdown:
     close_connection: true
 images:
@@ -155,14 +156,20 @@ images:
   cache_all: false
   cache_perms: '0755'
   debug: false
-  auto_fix_orientation: false
+  auto_fix_orientation: true
   seofriendly: false
+  cls:
+    auto_sizes: false
+    aspect_ratio: false
+    retina_scale: 1
+  defaults:
+    loading: auto
 media:
   enable_media_timestamp: false
-  unsupported_inline_types: null
-  allowed_fallback_types: null
+  unsupported_inline_types: {  }
+  allowed_fallback_types: {  }
   auto_metadata_exif: false
-  upload_limit: 8388608
+  upload_limit: 2097152
 session:
   enabled: true
   initialize: true
@@ -171,7 +178,9 @@ session:
   uniqueness: path
   secure: false
   httponly: true
+  samesite: Lax
   split: true
+  domain: null
   path: null
 gpm:
   releases: stable
@@ -180,9 +189,20 @@ gpm:
   verify_peer: true
   official_gpm_only: true
 accounts:
-  type: data
+  type: regular
   storage: file
+flex:
+  cache:
+    index:
+      enabled: true
+      lifetime: 60
+    object:
+      enabled: true
+      lifetime: 600
+    render:
+      enabled: true
+      lifetime: 600
 strict_mode:
-  yaml_compat: true
-  twig_compat: true
-  blueprint_compat: true
+  yaml_compat: false
+  twig_compat: false
+  blueprint_compat: false

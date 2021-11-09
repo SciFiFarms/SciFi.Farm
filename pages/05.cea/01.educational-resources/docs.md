@@ -1,12 +1,15 @@
 ---
 title: 'Educational Resources'
+taxonomy:
+    category:
+        - docs
 ---
 
 I'm no expert, and tend to favor playing with software rather than biology, so I don't have much more than links to other resources in the CEA section. With that said, I've found these resources to be unusually helpful or informative.
 
 Controlled Environment Agriculture is fairly large subject and the topics covered here is only a sliver of what's available, so if you have resources you'd like to share, feel free to submit a pull request!
 
-## Compressive lectures
+## Comprehensive lectures
 
 - ### [Physiology of Plant Production under Controlled Environment](https://www.youtube.com/watch?v=upwQrEJ-ZLY&list=PL7fPr3CuAdvv4ZPJKPvi4U7VblxKJnegD)
 

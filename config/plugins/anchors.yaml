@@ -1,8 +1,0 @@
-enabled: true
-active: true
-selectors: 'h1,h2,h3,h4'
-placement: right
-visible: always
-icon: null
-class: null
-truncate: 64
