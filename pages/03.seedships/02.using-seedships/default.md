@@ -3,7 +3,6 @@ title: 'Using Seedships'
 visible: true
 ---
 
-example
 # From PR
 - What they control
 - ln -s
