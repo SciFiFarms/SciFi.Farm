@@ -1,5 +1,6 @@
 ---
 title: Secrets
+visible: false
 ---
 
 To avoid storing secrets in plain text, you'll need to create a secret with your DuckDNS token in it.

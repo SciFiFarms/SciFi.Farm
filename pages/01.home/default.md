@@ -4,7 +4,11 @@ body_classes: 'title-center title-h1h2'
 ---
 
 # Welcome!
-This site contains the documentation needed to run a SciFi Farm. It's split into 4 main topics:
+This site contains the documentation needed to run a SciFi Farm. 
+
+!!! This documentation isn't complete. There are still a fair number of pages I'd like to write but haven't yet. Things like Seedship parts list and working with ESPHome are at the top of the list. If there is anything you'd like to see, let me know via a GitHub issue. For now, I've disabled all the empty pages, so if you see a link, it should have content.
+
+It's split into 4 main topics:
 
 * [Using TechnoCore](../technocore)   
     TechnoCore is a tool to assist in deploying services via Docker. It is how you install the software needed to run a SciFi Farm.   

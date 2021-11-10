@@ -2,10 +2,11 @@
 title: 'Developing TechnoCore'
 visible: true
 ---
-
+!! This page is more of an outline than actually helpful currently.
 ### Methodology
 TechnoCore takes a page out of the Ruby on Rails book and operates on the principle of convention over configuration. 
-Seperate Repos
+
+It has separate repos for each service.
 
 # How to develop with Technocore
     
@@ -51,7 +52,3 @@ Seperate Repos
 - `image_provider=scififarms`
 
 - `SERVICE_TRAEFIK_SUBDOMAIN=` - Prevents Traefik from running by default.
-
-### Methodology
-TechnoCore takes a page out of the Ruby on Rails book and operates on the principle of convention over configuration. 
-Seperate Repos

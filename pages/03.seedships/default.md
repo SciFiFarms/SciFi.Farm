@@ -1,5 +1,5 @@
 ---
 title: 'Playing with SeedShips'
-redirect: seedships/using-seedships
+redirect: seedships/what-is-a-seedship
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'Using Seedships'
-visible: true
+visible: false
 ---
 
 # From PR

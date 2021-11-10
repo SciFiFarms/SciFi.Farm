@@ -1,5 +1,6 @@
 ---
 title: 'ESPHome (micro-controller)'
+visible: false
 ---
 
 # Patterns

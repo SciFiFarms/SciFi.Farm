@@ -11,7 +11,7 @@ title: 'Flashing Tuya Devices (Make more friendly?)'
 6. Boot pi
 7. SSH in, change PW and hostname: sudo raspi-config
 8. Set up tuya-convert: https://github.com/ct-Open-Source/tuya-convert#procedure
-9. 
+
 
 ## How to flash a Tuya device
 1. Download firmware for a generic ESPHOME device. I use [empty.yaml]()
